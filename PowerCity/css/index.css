@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.Highlight {
+  color: #ED1C24;
+}
+
+.btn {
+  background-color: #ED1C24;
+  color: #FFFFFF;
+  border-radius: 10px !important;
+}
+
+.btn:hover {
+  background-color: #ED1C24;
+  color: #FFFFFF;
+  border-radius: 10px !important;
+}
+
+.heroTitle {
+  font-size: 64px !important;
+}
+
+.text {
+  font-size: 20px !important;
+}
+
+.HomeLight {
+  background: url(..//Images/BG.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.5s ease-in;
+}
+
+.HomeDark {
+  background: url(..//Images/BGDark.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.5s ease-in;
+}
+
+.light {
+  background-color: #FFFFFF;
+  color: #374B5A !important;
+  transition: all 0.3s ease-in;
+}
+.light .navbar {
+  background-color: #FFFFFF;
+  transition: all 0.3s ease-in;
+}
+.light .navbar .nav-link {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+}
+.light .navbar .locationDetails {
+  font-size: 12px;
+}
+.light .navbar .locationDetails .title {
+  font-size: 15px;
+  font-weight: 600;
+}
+.light .logo svg {
+  stroke: #374B5A !important;
+}
+
+.Dark {
+  background-color: #374B5A;
+  color: #FFFFFF !important;
+  transition: all 0.3s ease-in;
+}
+.Dark .navbar {
+  background-color: #374B5A;
+  transition: all 0.3s ease-in;
+}
+.Dark .navbar .nav-link {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  color: #FFFFFF;
+}
+.Dark .navbar .locationDetails {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.Dark .navbar .locationDetails .title {
+  font-size: 15px;
+  font-weight: 600;
+}
+.Dark .logo svg {
+  stroke: #FFFFFF !important;
+}
+
+.togglebtn {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 72px;
+  width: 38px;
+  border-radius: 30px;
+  border: 2px solid rgba(55, 75, 90, 0.2078431373);
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+.togglebtn .toggleCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: #374B5A;
+  position: absolute;
+  transform: translateY(2px);
+  transition: all 0.3s ease-in;
+  background-image: url(..//Images/sun.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  cursor: pointer;
+}
+
+.toggleActive {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: #ED1C24;
+  position: absolute;
+  transform: translateY(35px);
+  transition: all 0.3s ease-in;
+  background-image: url(..//Images/moon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

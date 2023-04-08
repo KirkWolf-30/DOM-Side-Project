@@ -1,0 +1,170 @@
+$Primary: #374B5A;
+$action: #ED1C24;
+$white: #FFFFFF;
+$StokeDark: #374b5a35;
+$StokeLight: #FFFFFF25;
+
+$Monte: 'Montserrat', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $Monte;
+}
+
+body{
+    position: relative;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.Highlight{
+    color: $action;
+}
+
+.btn{
+    background-color: $action;
+    color: $white;
+    border-radius: 10px !important;
+}
+
+.btn:hover{
+    background-color: $action;
+    color: $white;
+    border-radius: 10px !important;
+}
+
+.heroTitle{
+    font-size: 64px !important;
+}
+
+.text{
+    font-size: 20px !important;
+}
+
+
+.HomeLight{
+    background: url(..//Images/BG.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in;
+}
+
+.HomeDark{
+    background: url(..//Images/BGDark.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in;
+}
+
+// NAV
+
+.light{
+    background-color: $white;
+    color: $Primary !important;
+    transition: all .3s ease-in;
+    .navbar{
+        background-color: $white;
+        transition: all .3s ease-in;
+        .nav-link{
+            font-size: 15px !important;
+            font-weight: 400 !important;
+        }
+    
+        .locationDetails{
+            .title{
+                font-size: 15px;
+                font-weight: 600;
+            }
+            font-size: 12px;
+        }
+    }
+
+    .logo svg{
+        stroke: $Primary !important;
+    }
+    
+}
+
+.Dark{
+    background-color: $Primary;
+    color: $white !important;
+    transition: all .3s ease-in;
+    .navbar{
+        background-color: $Primary;
+        transition: all .3s ease-in;
+        .nav-link{
+            font-size: 15px !important;
+            font-weight: 400 !important;
+            color: $white;
+        }
+    
+        .locationDetails{
+            color: $white;
+            .title{
+                font-size: 15px;
+                font-weight: 600;
+            }
+            font-size: 12px;
+        }
+    }
+    .logo svg{
+        stroke: $white !important;
+    }
+}
+
+
+
+//Togggle
+
+.togglebtn{
+position: fixed;
+right: 10px;
+top: 50%;
+transform: translate(0 , -50%);
+    height: 72px;
+    width: 38px;
+    border-radius: 30px;
+    border: 2px solid $StokeDark;
+  display: flex;
+  justify-content: center;
+  background-color: $white;
+    
+    .toggleCircle{
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+        background-color: $Primary;
+        position: absolute;
+        transform: translateY(2px);
+        transition: all .3s ease-in;
+        background-image: url(..//Images/sun.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 70%;
+        
+
+        cursor: pointer;
+    }
+}
+
+  .toggleActive{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: $action;
+    position: absolute;
+    transform: translateY(35px);
+    transition: all .3s ease-in;
+    background-image: url(..//Images/moon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+
+    cursor: pointer;
+}
